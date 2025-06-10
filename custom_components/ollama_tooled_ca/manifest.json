@@ -1,0 +1,18 @@
+{
+  "domain": "ollama_tooled_ca",
+  "name": "Ollama Tooled Conversation Agent",
+  "codeowners": ["@ianisms"],
+  "config_flow": true,
+  "dependencies": ["conversation"],
+  "documentation": "https://github.com/ianisms/ollama_tooled_ca",
+  "integration_type": "service",
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/ianisms/ollama_tooled_ca/issues",
+  "requirements": [
+    "aiohttp>=3.8.0",
+    "voluptuous>=0.13.1"
+  ],
+  "version": "2.0.0",
+  "zeroconf": [],
+  "homeassistant": "2025.5.3"
+}

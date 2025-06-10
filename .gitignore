@@ -43,7 +43,7 @@ venv.bak/
 
 # Project specific
 custom_components/*
-!custom_components/ollama_assist/
+!custom_components/ollama_tooled_ca/
 *.log
 .coverage
 htmlcov/
@@ -52,3 +52,7 @@ coverage.xml
 # OS
 .DS_Store
 Thumbs.db
+
+# Local
+updatelatest.cmd
+custom_components/ollama_tooled_ca/logo - Copy.png

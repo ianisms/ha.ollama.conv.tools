@@ -1,0 +1,76 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "No models available",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "port": "Port"
+                },
+                "description": "Enter the Ollama server details",
+                "title": "Connect to Ollama"
+            },
+            "model": {
+                "data": {
+                    "model": "Model"
+                },
+                "description": "Select the LLM model to use",
+                "title": "Model Selection"
+            },
+            "prompt": {
+                "data": {
+                    "system_prompt": "System Prompt"
+                },
+                "description": "Customize AI assistant behavior (optional)",
+                "title": "System Prompt Configuration"
+            }
+        }
+    },
+    "title": "Ollama Tooled Conversation Agent",
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "system_prompt": "System Prompt"
+                }
+            }
+        }
+    },
+    "services": {
+        "conversation_process": {
+            "name": "Process conversation",
+            "description": "Process a conversation with Ollama",
+            "fields": {
+                "system_prompt": {
+                    "name": "System prompt",
+                    "description": "Override the default system prompt for this conversation"
+                }
+            }
+        }
+    },
+    "issues": {
+        "ollama_error": {
+            "title": "Ollama communication error",
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "title": "[%key:common::dialog::title::fix_error%]",
+                        "description": "A communication error occurred with Ollama. Please check the server status."
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "process_error": {
+            "message": "Error processing request"
+        }
+    }
+}

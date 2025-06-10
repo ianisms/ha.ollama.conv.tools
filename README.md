@@ -1,4 +1,4 @@
-# Ollama Assist for Home Assistant
+# Ollama Tooled Conversation Agent for Home Assistant
 
 A Home Assistant integration that provides a conversational interface to your smart home using Ollama's local language models. This integration allows you to interact with your Home Assistant instance using natural language, with support for executing various home automation tasks and retrieving information.
 
@@ -21,7 +21,7 @@ A Home Assistant integration that provides a conversational interface to your sm
    ```
    https://github.com/ianisms/ha.ollama.conv.tools
    ```
-2. Install the "Ollama Assist" integration through HACS
+2. Install the "Ollama Tooled Conversattion Agent" integration through HACS
 3. Restart Home Assistant
 4. Add the integration through the Home Assistant UI
 
@@ -29,7 +29,7 @@ A Home Assistant integration that provides a conversational interface to your sm
 
 1. Go to Settings -> Devices & Services
 2. Click "Add Integration"
-3. Search for "Ollama Assist"
+3. Search for "Ollama Tooled"
 4. Configure the following:
    - Ollama server host and port
    - Select your preferred model
